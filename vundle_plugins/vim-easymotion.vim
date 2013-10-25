@@ -1,4 +1,4 @@
 if exists('g:vundle_installing_plugins')
-  Plugin 'matchit.zip'
+  Plugin 'Lokaltog/vim-easymotion'
   finish
 endif

@@ -4,14 +4,16 @@
 " Version: 3.0 - Now each plugin is included and managed in its own file!
 " =============================================================================
 
+if &shell =~# 'fish$'
+    set shell=/bin/bash
+endif
+
 " All of the plugins are installed with Vundle from this file.
 source ~/.vim/vundle.vim
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on
 
-" Platform (Windows, Mac, etc.) configuration.
-source ~/.vim/platforms.vim
 " All of the Vim configuration.
 source ~/.vim/config.vim
 " New commands

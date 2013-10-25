@@ -2,27 +2,26 @@
 " Mappings
 " ----------------------------------------
 
-" Set leader to ,
+" Set leader to space
 " Note: This line MUST come before any <leader> mappings
-let mapleader=","
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 let maplocalleader = "\\"
-
-" -----------------------
-" Unmapped While Learning
-" -----------------------
-
-" No-op ^ and $ while learning H and L
-noremap ^ <nop>
-noremap $ <nop>
-nnoremap <leader>sc <nop>
 
 " ---------------
 " Regular Mappings
 " ---------------
 
-" Use ; for : in normal and visual mode, less keystrokes
+nnoremap n j
+vnoremap n j
+nnoremap e k
+vnoremap e k
+
+" Swap ; and : in normal and visual mode, less keystrokes
 nnoremap ; :
 vnoremap ; :
+nnoremap : ;
+vnoremap : ;
 
 " Yank entire buffer with gy
 nnoremap gy :0,$ y<cr>
@@ -39,8 +38,8 @@ noremap H ^
 noremap L $
 
 " Create newlines without entering insert mode
-nnoremap go o<Esc>k
-nnoremap gO O<Esc>j
+nnoremap go o<Esc>e
+nnoremap gO O<Esc>
 
 " remap U to <C-r> for easier redo
 " from http://vimbits.com/bits/356
@@ -94,20 +93,10 @@ nnoremap <silent> gx :wincmd x<CR>
 inoremap <C-l> <C-x><C-l>
 
 " Scroll larger amounts with C-j / C-k
-nnoremap <C-j> 15gjzz
-nnoremap <C-k> 15gkzz
-vnoremap <C-j> 15gjzz
-vnoremap <C-k> 15gkzz
-
-" ---------------
-" Insert Mode Mappings
-" ---------------
-
-" Let's make escape better, together.
-inoremap jk <Esc>
-inoremap JK <Esc>
-inoremap Jk <Esc>
-inoremap jK <Esc>
+nnoremap <C-n> 15gjzz
+nnoremap <C-e> 15gkzz
+vnoremap <C-n> 15gjzz
+vnoremap <C-e> 15gkzz
 
 " ---------------
 " Leader Mappings
