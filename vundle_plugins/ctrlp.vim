@@ -16,6 +16,7 @@ let g:ctrlp_mruf_default_order = 0
 " Leader Commands
 nnoremap <leader>. :CtrlPRoot<CR>
 nnoremap <leader>m :CtrlPMRUFiles<CR>
+nnoremap <leader>g :CtrlPTag<CR>
 
 if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore

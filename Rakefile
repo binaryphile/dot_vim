@@ -31,7 +31,7 @@ namespace :vim do
         if File.exists? dot_file
           puts "#{dot_file} already exists, skipping link."
         else
-          File.symlink(".vim/#{file}", dot_file)
+          File.symlink(".config/nvim/#{file}", dot_file)
           puts "Created link for #{file} in your home folder."
         end
       end
@@ -65,7 +65,7 @@ def add_plugins_to_readme(plugins = [])
   unless index.nil?
     lines.insert(index+1, "\n#{PLUGINS_HEADER}")
     plugin_rows = plugins
-      .sort {|x,y| 
+      .sort {|x,y|
         x[:stars] <=> y[:stars] or x[:name].downcase <=> y[:name].downcase
       }
       .reverse

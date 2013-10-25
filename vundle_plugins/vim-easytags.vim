@@ -1,4 +1,4 @@
 if exists('g:vundle_installing_plugins')
-  Plugin 'groenewege/vim-less'
+  Plugin 'xolox/vim-easytags'
   finish
 endif

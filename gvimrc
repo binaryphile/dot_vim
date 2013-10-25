@@ -15,3 +15,8 @@ if has('gui_macvim')
 endif
 
 set visualbell " Keeps the audio bell from sounding in the GUI
+
+set guifont=Deja\ Vu\ Sans\ Mono\ for\ Powerline\ 13
+set co=110
+set lines=29
+

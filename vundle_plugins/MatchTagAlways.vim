@@ -9,4 +9,5 @@ let g:mta_filetypes = {
     \ 'xml' : 1,
     \ 'handlebars' : 1,
     \ 'eruby' : 1,
+    \ 'md' : 1,
     \}

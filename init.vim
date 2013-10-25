@@ -4,23 +4,25 @@
 " Version: 3.0 - Now each plugin is included and managed in its own file!
 " =============================================================================
 
+if &shell =~# 'fish$'
+    set shell=/bin/bash
+endif
+
 " All of the plugins are installed with Vundle from this file.
-source ~/.vim/vundle.vim
+source ~/.config/nvim/vundle.vim
 
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on
 
-" Platform (Windows, Mac, etc.) configuration.
-source ~/.vim/platforms.vim
 " All of the Vim configuration.
-source ~/.vim/config.vim
+source ~/.config/nvim/config.vim
 " New commands
-source ~/.vim/commands.vim
+source ~/.config/nvim/commands.vim
 " All hotkeys, not dependant on plugins, are mapped here.
-source ~/.vim/mappings.vim
+source ~/.config/nvim/mappings.vim
 " Load plugin-specific configuration.
-source ~/.vim/plugins.vim
+source ~/.config/nvim/plugins.vim
 " Small custom functions.
-source ~/.vim/functions.vim
+source ~/.config/nvim/functions.vim
 " Auto commands.
-source ~/.vim/autocmds.vim
+source ~/.config/nvim/autocmds.vim

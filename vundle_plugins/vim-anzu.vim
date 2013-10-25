@@ -3,6 +3,6 @@ if exists('g:vundle_installing_plugins')
   finish
 endif
 
-nmap n <Plug>(anzu-n)
-nmap N <Plug>(anzu-N)
+nmap j <Plug>(anzu-n)
+nmap J <Plug>(anzu-N)
 let g:airline#extensions#anzu#enabled = 1

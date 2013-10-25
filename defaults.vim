@@ -1,12 +1,11 @@
-" ---------------------------------------------
-" Regular Vim Configuration (No Plugins Needed)
-" ---------------------------------------------
+set nocompatible " be iMproved
+filetype plugin indent on
 
 " ---------------
 " Color
 " ---------------
 set background=dark
-colorscheme jellybeans
+colorscheme murphy
 " Force 256 color mode if available
 if $TERM =~ "-256color"
   set t_Co=256
@@ -15,11 +14,23 @@ endif
 " -----------------------------
 " File Locations
 " -----------------------------
-set backupdir=~/.local/share/nvim/backup// " Double // causes backups to use full file path
+let shareDir=expand('$HOME/.local/share/vim')
+if !isdirectory(shareDir)
+  call system('mkdir -p '.shareDir)
+endif
+let backupDir=shareDir.'/backup'
+if !isdirectory(backupDir)
+  call mkdir(backupDir, '', 0700)
+endif
+set backupdir=~/.local/share/vim/backup// " Double // causes backups to use full file path
 " Persistent Undo
 if has('persistent_undo')
+  let undoDir=shareDir.'/undo'
+  if !isdirectory(undoDir)
+    call mkdir(undoDir, '', 0700)
+  endif
+  set undodir=~/.local/share/vim/undo
   set undofile
-  set undodir=~/.local/share/nvim/undo
 endif
 
 " ---------------
@@ -30,13 +41,8 @@ set number         " Line numbers on
 set nowrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
 set cmdheight=2    " Make the command area two lines high
-set cursorline     " Highlight current line
 set encoding=utf-8
-set noshowmode     " Don't show the mode since Powerline shows it
 set title          " Set the title of the window in the terminal to the file
-if exists('+colorcolumn')
-  set colorcolumn=72 " Color the 80th column differently as a wrapping guide.
-endif
 " Disable tooltips for hovering keywords in Vim
 if exists('+ballooneval')
   " This doesn't seem to stop tooltips for Ruby files
@@ -52,16 +58,14 @@ syntax enable
 set backup             " Turn on backups
 set autoread           " Automatically reload changes if detected
 set wildmenu           " Turn on WiLd menu
-" longest common part, then all.
-set wildmode=longest,full
 set hidden             " Change buffer - without saving
 set history=768        " Number of things to remember in history.
-set confirm            " Enable error files & error jumping.
+set cf                 " Enable error files & error jumping.
 set clipboard+=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
-set timeoutlen=400     " Time to wait for a command (after leader for example).
+" set timeoutlen=450     " Time to wait for a command (after leader for example).
 set ttimeout
-set ttimeoutlen=100    " Time to wait for a key sequence.
+set ttimeoutlen=100    " Time to wait for a command (after leader for example).
 set nofoldenable       " Disable folding entirely.
 set foldlevelstart=99  " I really don't like folds.
 set formatoptions=crql
@@ -118,7 +122,7 @@ set listchars+=extends:>
 " continues beyond the right of the screen
 set listchars+=precedes:<
 " show non-breaking spaces
-set listchars+=nbsp:+
+set listchars+=nbsp:¬
 
 " ---------------
 " Sounds
@@ -135,3 +139,18 @@ set mouse=a    " Mouse in all modes
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+if has("autocmd")
+  augroup MyAutoCommands
+    " Clear the auto command group so we don't define it multiple times
+    " Idea from http://learnvimscriptthehardway.stevelosh.com/chapters/14.html
+    autocmd!
+
+    " When editing a file, always jump to the last cursor position.
+    " This must be after the uncompress commands.
+    autocmd BufReadPost *
+          \ if line("'\"") > 1 && line ("'\"") <= line("$") |
+          \   exe "normal! g`\"" |
+          \ endif
+  augroup END
+endif

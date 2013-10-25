@@ -1,3 +1,6 @@
+" https://github.com/nanotech/jellybeans.vim/issues/47
+let g:jellybeans_use_term_background_color = 1
+
 if exists('g:vundle_installing_plugins')
   Plugin 'nanotech/jellybeans.vim'
   finish

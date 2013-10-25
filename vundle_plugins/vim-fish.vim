@@ -1,4 +1,4 @@
 if exists('g:vundle_installing_plugins')
-  Plugin 'wavded/vim-stylus'
+  Plugin 'dag/vim-fish'
   finish
 endif
