@@ -16,7 +16,7 @@ endif
 " File Locations
 " -----------------------------
 set backupdir=~/tmp/vim/backup// " Double // causes backups to use full file path
-set directory=~/tmp/vim/tmp//
+set directory=~/tmp/vim/swp//
 " Persistent Undo
 if has('persistent_undo')
   set undofile
