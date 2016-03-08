@@ -1,11 +1,3 @@
-call plug#begin('~/.vim/plugged')
-
-Plug 'nanotech/jellybeans.vim'
-Plug 'tpope/vim-fugitive'
-
-" Add plugins to &runtimepath
-call plug#end()
-
 set nocompatible " be iMproved
 filetype plugin indent on
 
@@ -13,8 +5,7 @@ filetype plugin indent on
 " Color
 " ---------------
 set background=dark
-let g:jellybeans_use_term_background_color=1
-colorscheme jellybeans
+colorscheme murphy
 " Force 256 color mode if available
 if $TERM =~ "-256color"
   set t_Co=256
