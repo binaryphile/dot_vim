@@ -1,19 +1,27 @@
+set nocompatible " be iMproved
+filetype plugin indent on
+
+" ---------------
+" Plugins
+" ---------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'nanotech/jellybeans.vim'
-Plug 'tpope/vim-fugitive'
+" Source all the plugins with a global variable set that ensures only the
+" Plugin 'name' code will be called.
+let g:vim_plug_installing_plugins = 1
+for file in split(glob('$HOME/.vim/vim-plugins/*.vim'), '\n')
+  exe 'source' fnameescape(file)
+endfor
+unlet g:vim_plug_installing_plugins
 
 " Add plugins to &runtimepath
 call plug#end()
 
-set nocompatible " be iMproved
-filetype plugin indent on
 
 " ---------------
 " Color
 " ---------------
 set background=dark
-let g:jellybeans_use_term_background_color=1
 colorscheme jellybeans
 " Force 256 color mode if available
 if $TERM =~ "-256color"
@@ -95,7 +103,6 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
-set textwidth=72
 
 " ---------------
 " Searching
@@ -164,4 +171,3 @@ if has("autocmd")
           \ endif
   augroup END
 endif
-
