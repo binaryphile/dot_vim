@@ -158,3 +158,13 @@ vnoremap : ;
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @@
+
+" Minimak
+nnoremap n j
+vnoremap n j
+nnoremap e k
+vnoremap e k
+nnoremap j n
+vnoremap j n
+nnoremap k e
+vnoremap k e
