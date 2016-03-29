@@ -20,7 +20,6 @@ call plug#end()
 " ---------------
 " Color
 " ---------------
-set background=dark
 colorscheme jellybeans
 " Force 256 color mode if available
 if $TERM =~ "-256color"
@@ -135,6 +134,16 @@ if has("autocmd")
           \ endif
   augroup END
 endif
+
+" ----------------------------------------
+" Mappings
+" ----------------------------------------
+
+" Set leader to space
+" Note: This line MUST come before any <leader> mappings
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+let maplocalleader = "\\"
 
 " Create newlines without entering insert mode
 nnoremap go o<Esc>e
