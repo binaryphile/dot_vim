@@ -1,6 +1,5 @@
 if exists('g:vim_plug_installing_plugins')
   Plug 'vim-airline/vim-airline'
-  finish
 endif
 
 let g:airline_theme = 'jellybeans'
@@ -14,7 +13,6 @@ let g:airline_mode_map = {
       \ 'v'  : 'V',
       \ 'V'  : 'VL',
       \ 'c'  : 'CMD',
-      \ '' : 'VB',
       \ }
 " Show the current working directory folder name
 let g:airline_section_b = '%{substitute(getcwd(), ".*\/", "", "g")} '

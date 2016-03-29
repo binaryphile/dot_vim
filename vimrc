@@ -1,5 +1,11 @@
 set nocompatible " be iMproved
 
+" Set leader to space
+" Note: This line MUST come before any <leader> mappings
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+let maplocalleader = "\\"
+
 " ---------------
 " Plugins
 " ---------------
@@ -138,12 +144,6 @@ endif
 " ----------------------------------------
 " Mappings
 " ----------------------------------------
-
-" Set leader to space
-" Note: This line MUST come before any <leader> mappings
-nnoremap <SPACE> <Nop>
-let mapleader=" "
-let maplocalleader = "\\"
 
 " Create newlines without entering insert mode
 nnoremap go o<Esc>e
