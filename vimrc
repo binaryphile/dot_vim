@@ -159,12 +159,6 @@ vnoremap k e
 nnoremap go o<Esc>e
 nnoremap gO O<Esc>
 
-" Swap ; and : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
-nnoremap : ;
-vnoremap : ;
-
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @@
