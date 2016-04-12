@@ -1,3 +1,7 @@
+if &shell =~# 'fish$'
+    set shell=/bin/bash
+endif
+
 set nocompatible " be iMproved
 
 " Set leader to space
