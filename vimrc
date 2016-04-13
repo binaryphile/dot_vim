@@ -178,6 +178,10 @@ vnoremap k e
 nnoremap go o<Esc>e
 nnoremap gO O<Esc>
 
+" remap U to <C-r> for easier redo
+" from http://vimbits.com/bits/356
+nnoremap U <C-r>
+
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @@
