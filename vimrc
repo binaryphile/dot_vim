@@ -80,7 +80,6 @@ endif
 set backup             " Turn on backups
 set hidden             " Change buffer - without saving
 set cf                 " Enable error files & error jumping.
-set clipboard+=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
 set nofoldenable       " Disable folding entirely.
 set foldlevelstart=99  " I really don't like folds.
@@ -218,16 +217,6 @@ call MapCR()
 " Mappings
 " ----------------------------------------
 
-" Minimak
-nnoremap n j
-vnoremap n j
-nnoremap e k
-vnoremap e k
-nnoremap j n
-vnoremap j n
-nnoremap k e
-vnoremap k e
-
 " Create newlines without entering insert mode
 nnoremap go o<Esc>e
 nnoremap gO O<Esc>
@@ -244,7 +233,7 @@ nnoremap Q @@
 nnoremap <leader>fef mx=ggG='x
 
 " Scroll larger amounts with g
-nnoremap gn 15gjzz
-nnoremap ge 15gkzz
-vnoremap gn 15gjzz
-vnoremap ge 15gkzz
+nnoremap gj 15gjzz
+nnoremap gk 15gkzz
+vnoremap gj 15gjzz
+vnoremap gk 15gkzz
