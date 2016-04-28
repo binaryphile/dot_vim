@@ -131,12 +131,6 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-" ---------------
-" Mouse
-" ---------------
-set mousehide  " Hide mouse after chars typed
-set mouse=a    " Mouse in all modes
-
 " Better complete options to speed it up
 set complete=.,w,b,u,U
 
