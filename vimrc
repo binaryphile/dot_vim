@@ -137,12 +137,6 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-" ---------------
-" Mouse
-" ---------------
-set mousehide  " Hide mouse after chars typed
-set mouse=a    " Mouse in all modes
-
 if has("autocmd")
   augroup MyAutoCommands
     " Clear the auto command group so we don't define it multiple times
