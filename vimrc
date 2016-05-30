@@ -187,16 +187,6 @@ nnoremap <silent> <leader>stw :silent! StripTrailingWhiteSpaceAndSave<CR>
 " Mappings
 " ----------------------------------------
 
-" Minimak
-nnoremap n j
-vnoremap n j
-nnoremap e k
-vnoremap e k
-nnoremap j n
-vnoremap j n
-nnoremap k e
-vnoremap k e
-
 " Create newlines without entering insert mode
 nnoremap go o<Esc>e
 nnoremap gO O<Esc>
@@ -219,10 +209,10 @@ nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
 nnoremap <leader>fef mx=ggG='x
 
 " Scroll larger amounts with g
-nnoremap gn 15gjzz
-nnoremap ge 15gkzz
-vnoremap gn 15gjzz
-vnoremap ge 15gkzz
+nnoremap gj 15gjzz
+nnoremap gk 15gkzz
+vnoremap gj 15gjzz
+vnoremap gk 15gkzz
 
 " Insert date
 iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
