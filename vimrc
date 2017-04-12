@@ -130,6 +130,8 @@ set listchars+=precedes:<
 " show non-breaking spaces
 set listchars+=nbsp:¬
 
+let g:is_bash = 1
+
 " ---------------
 " Sounds
 " ---------------
