@@ -215,3 +215,6 @@ nnoremap gn 15gjzz
 nnoremap ge 15gkzz
 vnoremap gn 15gjzz
 vnoremap ge 15gkzz
+
+" Insert date
+iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
