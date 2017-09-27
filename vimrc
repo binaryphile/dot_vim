@@ -207,6 +207,12 @@ nnoremap U <C-r>
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @@
 
+" Underline the current line with '-'
+nnoremap <silent> <leader>ul :t.\|s/./-/\|:nohls<cr>
+
+" Underline the current line with '='
+nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
+
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
 
