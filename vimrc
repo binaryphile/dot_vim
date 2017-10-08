@@ -31,10 +31,7 @@ call plug#end()
 " Color
 " ---------------
 colorscheme jellybeans
-" Force 256 color mode if available
-if $TERM =~ "-256color"
-  set t_Co=256
-endif
+set t_Co=256
 
 " -----------------------------
 " File Locations
