@@ -45,6 +45,11 @@ if !isdirectory(backupDir)
   call mkdir(backupDir, '', 0700)
 endif
 set backupdir=~/.local/share/vim/backup// " Double // causes backups to use full file path
+let swapDir=shareDir.'/swap'
+if !isdirectory(swapDir)
+  call mkdir(swapDir, '', 0700)
+endif
+set directory=~/.local/share/vim/swap// " Double // causes backups to use full file path
 " Persistent Undo
 if has('persistent_undo')
   let undoDir=shareDir.'/undo'
