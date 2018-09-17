@@ -1,7 +1,3 @@
-if &shell =~# 'fish$'
-  set shell=/bin/bash
-endif
-
 set nocompatible " be iMproved
 
 " Set leader to space
@@ -25,7 +21,6 @@ unlet g:vim_plug_installing_plugins
 
 " Add plugins to &runtimepath
 call plug#end()
-
 
 " ---------------
 " Color
@@ -97,8 +92,9 @@ set switchbuf=useopen  " Switch to an existing buffer if one exists
 set tabstop=2
 set shiftwidth=2 " Tabs under smart indent
 set shiftround
-set cindent
+set smartindent
 set expandtab
+set formatoptions+=b
 
 " ---------------
 " Searching
