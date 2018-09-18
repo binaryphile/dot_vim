@@ -24,6 +24,5 @@ let  g:go_highlight_function_calls  =  1
 let  g:go_highlight_operators       =  1
 let  g:go_highlight_extra_types     =  1
 let  g:go_metalinter_autosave       =  1
-let  g:go_auto_type_info            =  1
 let  g:go_auto_sameids              =  1
 let  g:go_version_warning           =  0
