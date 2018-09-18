@@ -92,7 +92,6 @@ set switchbuf=useopen  " Switch to an existing buffer if one exists
 set tabstop=2
 set shiftwidth=2 " Tabs under smart indent
 set shiftround
-set smartindent
 set expandtab
 set formatoptions+=b
 
