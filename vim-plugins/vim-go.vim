@@ -12,12 +12,12 @@ function! s:build_go_files()
   endif
 endfunction
 
-nnoremap <Leader>t :GoTest<CR>
-nnoremap <Leader>b :<C-u>call <SID>build_go_files()<CR>
-nnoremap <Leader>r :GoRun<CR>
-nnoremap <Leader>c :GoCoverageBrowser<CR>
-nnoremap <Leader>d :GoDeclsDir<CR>
-nnoremap <Leader>a :GoAlternate<CR>
+nnoremap <Leader>ot :GoTest<CR>
+nnoremap <Leader>ob :<C-u>call <SID>build_go_files()<CR>
+nnoremap <Leader>or :GoRun<CR>
+nnoremap <Leader>oc :GoCoverageBrowser<CR>
+nnoremap <Leader>od :GoDeclsDir<CR>
+nnoremap <Leader>oa :GoAlternate<CR>
 
 let  g:go_fmt_command                     =  "goimports"
 let  g:go_highlight_types                 =  1
@@ -30,7 +30,7 @@ let  g:go_highlight_fields                =  1
 let  g:go_highlight_variable_assignments  =  1
 let  g:go_metalinter_autosave             =  1
 let  g:go_version_warning                 =  0
-let  g:go_auto_type_info                  =  1
+" let  g:go_auto_type_info                  =  1
 
 " Error and warning signs.
 let g:ale_sign_error = '⤫'
