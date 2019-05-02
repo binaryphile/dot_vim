@@ -10,3 +10,4 @@ if exists('g:vim_plug_installing_plugins')
 endif
 
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
