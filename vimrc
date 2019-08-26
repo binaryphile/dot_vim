@@ -149,7 +149,6 @@ if has("autocmd")
           \ if line("'\"") > 1 && line ("'\"") <= line("$") |
           \   exe "normal! g`\"" |
           \ endif
-    autocmd FileType java setlocal noexpandtab
     autocmd FileType java setlocal tabstop=4
   augroup END
 endif
