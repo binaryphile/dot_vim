@@ -151,6 +151,7 @@ if has("autocmd")
           \ endif
     autocmd FileType java setlocal noexpandtab
     autocmd FileType java setlocal tabstop=4
+    autocmd FileType java setlocal shiftwidth=4
   augroup END
 endif
 
