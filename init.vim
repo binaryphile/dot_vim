@@ -13,3 +13,5 @@ unlet g:vim_plug_installing_plugins
 
 " Add plugins to &runtimepath
 call plug#end()
+
+exe 'source' stdpath('config') . '/color.vim'
