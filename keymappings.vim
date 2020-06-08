@@ -34,3 +34,7 @@ vnoremap ge 15gkzz
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 inoremap jk <esc>
+
+" Insert date
+iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
+
