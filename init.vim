@@ -7,3 +7,4 @@ runtime keymappings.vim
 runtime search.vim
 runtime text.vim
 runtime ui.vim
+runtime visual.vim
