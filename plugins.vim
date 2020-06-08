@@ -1,6 +1,3 @@
-" ---------------
-" Plugins
-" ---------------
 call plug#begin(stdpath('data').'/plugged')
 
 " Source all the plugins with a global variable set that ensures only the
