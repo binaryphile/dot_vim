@@ -1,7 +1,6 @@
 runtime plugins.vim
 runtime minimak.vim
 runtime behavior.vim
-runtime dirs.vim
 runtime functions.vim
 runtime keymappings.vim
 runtime search.vim

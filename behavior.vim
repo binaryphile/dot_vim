@@ -5,6 +5,11 @@ set nostartofline      " Don't go to the start of the line after some commands
 set switchbuf=useopen  " Switch to an existing buffer if one exists
 "set iskeyword+=\$,-   " Add extra characters that are valid parts of variables
 
+let &backupdir = stdpath('data').'/backup//'
+if !isdirectory(&backupdir)
+  call mkdir(&backupdir, '', 0700)
+endif
+
 if has('persistent_undo')
   set undofile
 endif
