@@ -35,6 +35,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 inoremap jk <esc>
 
+nnoremap <C-L> :nohlsearch<CR><C-L>
+
 " Insert date
 iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
-
