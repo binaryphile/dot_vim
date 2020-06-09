@@ -1,7 +1,4 @@
-let g:airline#extensions#default#layout = [
-  \ [ 'a', 'b', 'c' ],
-  \ [ 'x', 'y', 'z' ]
-  \ ]
+setlocal colorcolumn=100
 setlocal listchars-=tab:»\ 
 setlocal listchars+=tab:\ \ 
 setlocal noexpandtab
