@@ -1,6 +1,6 @@
 set autowrite           " Writes on make/shell commands
 set backup              " Turn on backups
-set hidden              " Change buffer - without saving
+set hidden              " Change buffer without saving
 set switchbuf=useopen   " Switch to an existing buffer if one exists
 
 let &backupdir = stdpath('data').'/backup//'
