@@ -6,3 +6,11 @@ nnoremap j n
 vnoremap j n
 nnoremap k e
 vnoremap k e
+nnoremap N J
+vnoremap N J
+nnoremap E K
+vnoremap E K
+nnoremap J N
+vnoremap J N
+nnoremap K E
+vnoremap K E
