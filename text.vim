@@ -4,7 +4,7 @@ set nowrap                  " Line wrapping off
 set shiftround              " Round shifting to multiple of tabstop
 set shiftwidth=2            " Tabs under smart indent
 set tabstop=2               " Two-space tabs
-set textwidth=80            " Wrap column
+set textwidth=72            " Wrap column
 
 set list                    " Show invisible characters
 set listchars+=tab:»\       " Show native tabs
