@@ -33,9 +33,7 @@ vnoremap ge 15gkzz
 " Source changes to init.vim
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-inoremap jk <esc>
-
-nnoremap <C-L> :nohlsearch<CR><C-L>
+nnoremap <C-L> :nohlsearch<CR><C-L>       " clear search highlight
 
 " Insert date
 iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
