@@ -1,6 +1,7 @@
 set autowrite                         " Writes on make/shell commands
 set backup                            " Turn on backups
 set clipboard^=unnamed,unnamedplus    " Integrate with system clipboard
+set confirm                           " Confirm on failed operations
 set hidden                            " Change buffer - without saving
 set nostartofline                     " Don't go to the start of the line after some commands
 set switchbuf=useopen                 " Switch to an existing buffer if one exists
