@@ -1,5 +1,6 @@
 if exists('g:vim_plug_installing_plugins')
   Plug 'vim-airline/vim-airline'
+  finish
 endif
 
 let g:airline_theme = 'jellybeans'

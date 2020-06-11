@@ -3,6 +3,7 @@ if exists('g:vim_plug_installing_plugins')
   if has('nvim')
     Plug 'rbgrouleff/bclose.vim'
   endif
+  finish
 endif
 
 let g:ranger_replace_netrw = 1
