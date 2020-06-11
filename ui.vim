@@ -1,5 +1,3 @@
-colorscheme jellybeans
-
 set clipboard^=unnamed,unnamedplus  " Integrate with system clipboard
 set cmdheight=2                     " Make the command area two lines high
 set confirm                         " Confirm on failed operations

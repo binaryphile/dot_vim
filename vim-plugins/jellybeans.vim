@@ -3,5 +3,31 @@ if exists('g:vim_plug_installing_plugins')
   finish
 endif
 
+" Fixes color schema for floating windows.
+" Via https://git.io/Jfs2T
+let g:jellybeans_overrides = {
+\    'Pmenu':    {
+\                    'guifg': 'D6D6D6',
+\                    'guibg': '303030',
+\                    'ctermfg': 'Black',
+\                    'ctermbg': 'Yellow',
+\                    'attr': ''
+\                },
+\    'PmenuSel': {
+\                    'guifg': '2B2B2B',
+\                    'guibg': 'D6D6D6',
+\                    'ctermfg': 'Yellow',
+\                    'ctermbg': 'Black',
+\                    'attr': ''
+\                }
+\}
+
+colorscheme jellybeans
+
 " A nicer red, also from https://git.io/Jfs2T
 hi! CocErrorSign guifg=#FF5656
+
+" Without this, coc-highlight's CursorHold highlight doesn't work
+hi! CocHighlightText guibg=#333333 gui=underline
+
+hi! CocInfoSign guifg=LightBlue
