@@ -5,7 +5,7 @@ runtime minimak.vim
 runtime plugin-config.vim
 
 " Not here
-runtime behavior.vim
+runtime config.vim
 runtime functions.vim
 runtime presentation.vim
 runtime search.vim
