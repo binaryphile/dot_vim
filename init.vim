@@ -7,6 +7,6 @@ runtime plugin-config.vim
 " Not here
 runtime behavior.vim
 runtime functions.vim
+runtime presentation.vim
 runtime search.vim
 runtime text.vim
-runtime ui.vim
