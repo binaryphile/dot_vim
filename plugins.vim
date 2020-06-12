@@ -4,7 +4,7 @@ call plug#begin(stdpath('data').'/plugged')
 " Plugin 'name' code will be called.
 let g:vim_plug_installing_plugins = 1
 for file in split(glob(stdpath('config').'/vim-plugins/*.vim'), '\n')
-  exe 'source' fnameescape(file)
+  exe 'source' file
 endfor
 unlet g:vim_plug_installing_plugins
 
