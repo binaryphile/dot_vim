@@ -16,11 +16,6 @@ nnoremap U <C-r>
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @@
 
-" Underline the current line with '-'
-nnoremap <silent> <leader>ul :t.\|s/./-/\|:nohls<cr>
-" Underline the current line with '='
-nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
-
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
 
@@ -30,10 +25,4 @@ nnoremap ge 15gkzz
 vnoremap gn 15gjzz
 vnoremap ge 15gkzz
 
-" Source changes to init.vim
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
 nnoremap <C-L> :nohlsearch<CR><C-L>       " clear search highlight
-
-" Insert date
-iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
