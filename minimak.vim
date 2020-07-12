@@ -14,3 +14,8 @@ nnoremap J N
 vnoremap J N
 nnoremap K E
 vnoremap K E
+
+nnoremap gn 15gjzz
+nnoremap ge 15gkzz
+vnoremap gn 15gjzz
+vnoremap ge 15gkzz
