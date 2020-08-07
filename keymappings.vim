@@ -20,9 +20,9 @@ nnoremap Q @@
 nnoremap <leader>fef mx=ggG='x
 
 " Scroll larger amounts with g
-nnoremap gj 15gjzz
-nnoremap gk 15gkzz
-vnoremap gj 15gjzz
-vnoremap gk 15gkzz
+nnoremap gj 15jzz
+nnoremap gk 15kzz
+vnoremap gj 15jzz
+vnoremap gk 15kzz
 
 nnoremap <C-L> :nohlsearch<CR><C-L>       " clear search highlight
