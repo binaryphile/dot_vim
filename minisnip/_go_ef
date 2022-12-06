@@ -1,0 +1,5 @@
+func Example{{+Func+}}(b *testing.B) {
+	{{++}}
+	//Output:
+	{{++}}
+}

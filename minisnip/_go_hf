@@ -1,0 +1,1 @@
+{{+http+}}.HandleFunc("{{+/+}}", {{+handler+}})

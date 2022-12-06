@@ -1,0 +1,5 @@
+func Benchmark{{+Func+}}(b *testing.B) {
+	for {{+i+}} := 0; {{+~\~1+}} < b.N; {{+~\~2+}}++ {
+		{{++}}
+	}
+}

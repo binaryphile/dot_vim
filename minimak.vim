@@ -1,0 +1,21 @@
+nnoremap n j
+vnoremap n j
+nnoremap e k
+vnoremap e k
+nnoremap j n
+vnoremap j n
+nnoremap k e
+vnoremap k e
+nnoremap N J
+vnoremap N J
+nnoremap E K
+vnoremap E K
+nnoremap J N
+vnoremap J N
+nnoremap K E
+vnoremap K E
+
+nnoremap gn 15jzz
+nnoremap ge 15kzz
+vnoremap gn 15jzz
+vnoremap ge 15kzz

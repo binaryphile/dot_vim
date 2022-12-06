@@ -1,0 +1,3 @@
+func {{+name+}}(w http.ResponseWriter, r *http.Request) {
+	{{++}}
+}

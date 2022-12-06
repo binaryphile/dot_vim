@@ -1,0 +1,3 @@
+func ({{+receiver+}}) {{+method+}}({{+args+}}) {{+return+}} {
+	{{++}}
+}

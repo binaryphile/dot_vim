@@ -1,0 +1,17 @@
+func TestFunc(t *testing.T) {
+	testCases := []struct {
+		desc	string
+		{{++}}
+	}{
+		{
+			desc: "{{++}}",
+			{{++}},
+		}
+	}
+
+	for _, tC := range testCases {
+		tt.Run(tC.desc, func (t *testing.T) {
+			{{++}}
+		})
+	}
+}

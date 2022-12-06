@@ -1,0 +1,3 @@
+func Test{{+Func+}}(t *testing.T) {
+	{{++}}
+}

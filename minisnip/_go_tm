@@ -1,0 +1,5 @@
+func TestMain(t *testing.M) {
+	{{++}}
+
+	os.Exit(m.Run())
+}
