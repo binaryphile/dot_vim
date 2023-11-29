@@ -1,6 +1,4 @@
 if exists('g:plug_installing_plugins')
-  Plug 'justinmk/vim-sneak'
+  Plug 'SuneelFreimuth/vim-gemtext'
   finish
 endif
-
-let g:sneak#label = 1

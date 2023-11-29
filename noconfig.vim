@@ -1,4 +1,4 @@
 set nocompatible
 filetype plugin on
-" colorscheme murphy
+colorscheme murphy
 set number
