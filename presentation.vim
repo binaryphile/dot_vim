@@ -14,7 +14,7 @@ set listchars+=precedes:<   " Line preceding content character
 set listchars+=nbsp:¬       " Show non-breaking spaces
 
 " Define a temporary listchars for visual mode only
-let g:visual_listchars = 'tab:▸\\,space:•,eol:↴,nbsp:¬'
+let g:visual_listchars = 'tab:▸\\,space:·,eol:↴,nbsp:¬'
 
 " Create an autocommand group for handling whitespace in visual mode
 augroup VisualWhitespace
