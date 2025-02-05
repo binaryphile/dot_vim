@@ -8,7 +8,7 @@ set scrolloff=15                    " Maintain lines at top or bottom
 
 set list                    " Show invisible characters
 set listchars+=tab:▸\       " Show native tabs
-set listchars+=trail:•      " Show trailing spaces as dots
+set listchars+=trail:·      " Show trailing spaces as dots
 set listchars+=extends:>    " Line continuation character
 set listchars+=precedes:<   " Line preceding content character
 set listchars+=nbsp:¬       " Show non-breaking spaces
