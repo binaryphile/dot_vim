@@ -12,8 +12,16 @@ set listchars+=extends:>    " Line continuation character
 set listchars+=precedes:<   " Line preceding content character
 
 set listchars+=nbsp:¬       " Show non-breaking spaces
-set listchars+=space:·      " Show spaces as dots
 set listchars+=tab:▸\       " Show native tabs
 set listchars+=trail:·      " Show trailing spaces as dots
 
-highlight! Whitespace ctermfg=bg guifg=bg   " Make whitespace characters blend into the background
+let g:visual_listchars = 'extends:>,precedes:<,tab:▸ ,space:·,nbsp:¬,trail:·'
+
+" Create an autocommand group for handling whitespace in visual mode
+augroup VisualWhitespace
+    autocmd!
+    " Save the current 'list' and 'listchars' state and apply visual settings when entering Visual mode
+    autocmd ModeChanged *:[vV\x]* let g:prev_list = &list | let g:prev_listchars = &listchars | set list | let &listchars = g:visual_listchars
+    " Restore the previous 'list' and 'listchars' state when leaving Visual mode
+    autocmd ModeChanged [vV\x]:* if exists('g:prev_list') | let &list = g:prev_list | unlet g:prev_list | endif | if exists('g:prev_listchars') | let &listchars = g:prev_listchars | unlet g:prev_listchars | endif
+augroup END
